@@ -1,0 +1,81 @@
+.nav{
+    position: sticky !important;
+    top:0px !important;
+    box-shadow: 5px 5px 5px 0px rgb(30, 28, 28);
+    z-index: 22222222;
+}
+.carasol{
+    height: auto;
+    width: 100%;
+    float: left;
+    background-image: url("https://i.pinimg.com/736x/b4/d0/93/b4d0930e5ff7d115f8d61c346de60de1.jpg");
+    background-size:cover;
+}
+.rent_car_form{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.carasol2{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.card_sec_2{
+    height: auto;
+    width: 100%;
+    float: left;
+}
+.trend_car_card1{
+    height: auto;
+    width: 100%;
+    float: left;
+    background-image: url("https://mahindragoodwood.co.za/wp-content/uploads/2018/11/Mahindra-Scorpio-SUV-2.jpg");
+    background-size: cover;
+}
+.trends_design{
+    height:500px;
+    width: 50%;
+    float: left;
+}
+
+
+.trends_info{
+    height:500px;
+    width: 50%;
+    float: left;
+    background-color: antiquewhite;
+}
+.trends_image{
+    background-image: url("https://images.hindustantimes.com/auto/img/2022/09/06/1600x900/Mahindra_Scorpio_Classic_review_1662168947639_1662442851152_1662443416695_1662443416695.jpg");
+    background-size: cover;
+}
+
+@media (max-width :768px) {
+    .trends_design{
+        width: 100%;
+        float: left;
+    }
+    .trends_info{
+        width: 100%;
+        float: left;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width : 575px) {
+    .services_card{
+        margin-top: 20px;
+    }
+    .blog_section{
+        margin-top: 20px;
+    }
+    .embeded_map{
+        height: 200px;
+    }
+    .header{
+
+        display: none;
+    }
+    
+}

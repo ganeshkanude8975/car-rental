@@ -1,0 +1,76 @@
+<%- include("navbar.ejs") %>
+
+<div class="container p-2">
+    <h4 class="bg-white mt-1 text-center p-2">Company Information Update Form</h4>
+    <form action="/admin/insert_company_info" method="post" enctype="multipart/form-data">
+    <div class="row mt-4 p-1 bg-white">
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_name">Company Name</label>
+         <input type="text" name="company_name" class="form-control" placeholder="Enter Comapny name">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_mobile">Company Mobile</label>
+         <input type="number" name="company_mobile" class="form-control" placeholder="Enter Company Mobile Number">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_email">Company Email</label>
+         <input type="email" name="company_email" class="form-control" placeholder="Enter Company Email">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_time">Company Time</label>
+         <input type="text" name="company_time" class="form-control" placeholder="Ex - Mon to Sat 09-00 : 17-00">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_logo">Company logo</label>  
+         <input type="file" name="company_logo" class="form-control">
+     </div>
+     <div class=" mt-3 col-md-2 col-sm-12 col-12">
+         <img src="" alt="">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_linkedin_link">Enter Linkedin Profile Link</label>
+         <input type="url" name="company_linkedin_link" class="form-control" placeholder="Paste Linkedin Link">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_whatsapp_link">Enter whatsapp Profile Link</label>
+         <input type="url" name="company_whatsapp_link" class="form-control" placeholder="Paste whatsapp Link">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_facebook_name">Enter facebook Profile name</label>
+         <input type="text" name="company_facebook_name" class="form-control" placeholder="Paste facebook name">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_facebook_link">Enter facebook Profile Link</label>
+         <input type="url" name="company_facebook_link" class="form-control" placeholder="Paste facebook Link">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_youtube_name">Enter youtube Profile name</label>
+         <input type="name" name="company_youtube_name" class="form-control" placeholder="Paste youtube name">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_youtube_link">Enter youtube Profile Link</label>
+         <input type="url" name="company_youtube_link" class="form-control" placeholder="Paste youtube Link">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_instagram_name">Enter instagram Profile name</label>
+         <input type="name" name="company_instagram_name" class="form-control" placeholder="Paste instagram name">
+     </div>
+     <div class=" mt-3 col-md-6 col-sm-12 col-12">
+         <label for="company_instagram_link">Enter instagram Profile Link</label>
+         <input type="url" name="company_instagram_link" class="form-control" placeholder="Paste instagram Link">
+     </div>
+     
+     <div class=" mt-3 col-md-12 col-sm-12 col-12">
+         <label for="company_address">Company Address</label>
+         <textarea name="company_address"  class="form-control"></textarea>
+     </div>
+     <div class=" mt-3 col-md-12 col-12 text-end">
+         <button class="btn btn-primary"> Update Information</button>
+     </div>
+    </div>
+    </form>
+ </div>
+ 
+
+ <%- include("footer.ejs")%>
+

@@ -1,0 +1,61 @@
+<%- include("navbar.ejs") %>
+    <h3 class="text-center bg-light mt-1 p-2">Welcome</h3>
+    <h4 class="container"><i>Fill This Form Carefully</i></h4>
+    <div class="container mb-3">
+        <form action="/save_book_car" method="post">
+            <div class="row">
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Enter Your Name</label>
+                    <input type="text" name="user_name" class="form-control" placeholder="Enter Your Full Name">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Enter Your Mobile</label>
+                    <input type="number" name="user_mobile" class="form-control" placeholder="Enter Your Mobile Number">
+                </div>
+               
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Pick Up Date</label>
+                    <input type="date" name="user_pick_up_date" class="form-control">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Drop Out Date</label>
+                    <input type="date" name="user_drop_out_date" class="form-control">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Pick Up Time</label>
+                    <input type="time" name="user_pick_up_time" class="form-control">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Drop Out Time</label>
+                    <input type="time" class="form-control" name="user_drop_out_time">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>People Travels in Car</label>
+                    <input type="number" class="form-control" name="user_total_people_in_car" placeholder="Enter Count of Peoples Travel In car">
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label>Enter Your Adhar No</label>
+                    <input type="text" class="form-control" name="user_adhar_no">
+                </div>
+                <div class="col-md-12 col-12 mt-2">
+                    <label>enter Name Who Travel In Trip</label>
+                    <textarea name="user_travel_peoples" id="" placeholder="enter Name Who Travel In Trip" class="form-control"></textarea>
+                </div>
+                <div class="col-md-6 col-12 mt-2">
+                    <label for="">Select Car</label>
+                    <select name="carbookname" id="" class="form-control">
+                    <option value="">Select Car</option>
+                    <option value="Scorpio">Scorpio</option>    
+                    <option value="Ertiga">Ertiga</option>
+                    <option value="Dizer">Dizer</option>
+                    <option value="Taxi">Taxi</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-12 mt-2 text-end"><br>
+                    <button class="btn btn-outline-primary" onclick="alert('Are Your Sure To Submit This')">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <%-include('footer.ejs') %>
